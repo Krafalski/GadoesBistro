@@ -1,1 +1,5 @@
 edit guests!
+<div class ="form">
+  <%= render partial: 'form'%><br>
+  <%= link_to "Delete", guest_path(@guest), method: :delete %>
+</div>

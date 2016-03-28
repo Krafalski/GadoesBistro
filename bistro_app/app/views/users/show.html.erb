@@ -1,7 +1,7 @@
 <div id="user-page">
-<h1>Hope your having a great day <%= @user.username%></h1><br>
+<h1>Uh oh! Are you having a rough day, <%= @user.username%>?</h1><br>
 
-<h1>I would rather you stick around but if you want to delete your account click below</h1><br><br>
+<h2>I would rather you stick around but if you want to delete your account click below</h2><br><br>
 
 <%=button_to 'DELETE', @user, :method => :delete %>
 
