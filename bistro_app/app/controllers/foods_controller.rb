@@ -1,7 +1,7 @@
-class FoodController < ApplicationController
+class FoodsController < ApplicationController
 
   def index
-    @food = Food.all
+    @foods = Food.all
   end
 
   def show
@@ -14,7 +14,7 @@ class FoodController < ApplicationController
 
   def create
     @food = Food.create(food_params)
-    redirect_to food_path
+    redirect_to foods_path
   end
 
   def edit
@@ -24,13 +24,13 @@ class FoodController < ApplicationController
   def update
     @food = Food.find(params[:id])
     @food.update(food_params)
-    redirect_to food_path
+    redirect_to foods_path
   end
 
   def destroy
     @food = Food.find(params[:id])
     @food.destroy
-    redirect_to food_path
+    redirect_to foods_path
   end
 
   def food_params
